@@ -1,0 +1,539 @@
+
+
+
+/* ------------------------------Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* -----------------------------------------Body------- */
+
+body{
+   font-family: "DM Sans", sans-serif;
+   background-color: #F5F5F5;
+   width: 100vw;
+   min-height: 100vh;
+   overflow-x: hidden;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ 
+  
+
+}
+
+
+
+#container-grid{
+    display: grid;
+    grid-template-rows:1fr 0.1fr 0.5fr 0.5fr;
+    grid-template-columns:repeat(4, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    width: 70%;
+    height: auto;
+}
+
+.border-radius{
+    border-radius: 8px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-flex{
+    display: flex;
+    flex-direction: row;
+}
+.images{
+    width: 12rem;
+}
+/* ----------------------------Create post----------------------- */
+#create-post{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #FAEEE2;
+    padding-left: 1.5rem;
+    padding-top: 2.5rem;
+    align-items: flex-start;
+
+}
+#create-post h2{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 1em;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+#create-post h2 span{
+    color: #7655C7;
+    font-style: italic;
+}
+#create-post img{
+   
+    width: 80%;
+   
+} 
+
+
+/* -------------------------social media------------------ */
+#social-media{
+    grid-column: 2/4;
+    grid-row: 1/2;
+   background-color:  #7651DC;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem ;
+}
+#social-media h2{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    /* margin-top: -1.5rem; */
+    margin-bottom: 0.5rem;
+    line-height: 2.8rem;
+}
+#social-media #text-10x{
+    color: #FDCC6C;
+}
+#social-media #text-faster{
+    font-style: italic;
+}
+#social-media h3{
+    margin-top: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+}
+/* ------------------------Schelude social media---------------------- */
+#schedule-social-media{
+    grid-column: 4/5;
+    grid-row: 1/4;
+    background-color: #DCD1FC;
+    justify-content: flex-start;
+    padding-top: 3.5rem;
+    padding-left: 1.5rem;
+    overflow-x: hidden;
+}
+#schedule-social-media h2{
+    font-size: 1.7rem;
+    text-align: left;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    
+    
+}
+#schedule-social-media img{
+    margin-left: 8rem;
+    height: 17rem;
+    width: 21rem;
+    margin-bottom: 1.2rem;
+}
+#schedule-social-media p{
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+/* ----------------------Write Content----------------------- */
+#write-content{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background-color: #FFCC69;
+    padding-left: 1rem;
+    padding-top: 0.6rem;
+}
+#write-content h2{
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+#write-content img{
+ height: 12rem; 
+}
+
+
+/* ---------------------------accounts plataforms----------------------- */
+#accounts-plataforms{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-color: #FFF;
+    overflow-x: hidden;
+    
+}
+#accounts-plataforms figure{
+    padding-left: 6rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+#accounts-plataforms img{
+    width: 17rem;
+}
+#accounts-plataforms h2{
+    text-align: left;
+    padding-left: 1.3rem;
+    padding-right: 1rem;
+    font-size: 1.7rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+
+
+/* --------------------Posting schedule-------------------- */
+
+#posting-schedule{
+    grid-column: 3/4;
+    grid-row: 2/4;
+    background-color: #FFCC69;
+    overflow-y: hidden;
+    padding-top: 1rem;
+}
+#posting-schedule h2{
+    padding-left: 1.3rem;
+    padding-right: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: -8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+
+#posting-schedule div{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    overflow-y:hidden;
+    padding-top: 8.5rem;
+}
+#position-schedule img{
+
+    position:absolute;
+    margin-top:1rem;
+    
+
+}
+
+/* -------------Pocentaje-------------------- */
+
+#porcentaje{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: #FFF;
+}
+#porcentaje span{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+#porcentaje p{
+    margin-bottom: 1rem;
+}
+
+
+/* -----------------Grow Followers------------------- */
+
+#grow-followers{
+    grid-column: 3/5;
+    grid-row: 4/5;
+    background-color: #7651DC;
+   padding: 1rem;
+} 
+#grow-followers h2{
+    color: #FFF;
+    font-size: xx-large;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+}
+
+/* ========================================
+   MEDIA QUERIES - DISPOSITIVOS RESPONSIVOS
+   ======================================== */
+
+/* ===================== TABLETS: 768px - 1024px ===================== */
+@media (max-width: 1024px) {
+    #container-grid{
+        width: 90%;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1.2rem;
+        column-gap: 1.2rem;
+    }
+
+    #create-post{
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    #social-media{
+        grid-column: 2/3;
+        grid-row: auto;
+    }
+
+    #schedule-social-media{
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    #write-content{
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    #accounts-plataforms{
+        grid-column: 2/3;
+        grid-row: auto;
+    }
+
+    #posting-schedule{
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    #porcentaje{
+        grid-column: 2/3;
+        grid-row: auto;
+    }
+
+    #grow-followers{
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    .images{
+        width: 10rem;
+    }
+
+    #schedule-social-media img{
+        margin-left: 3rem;
+        height: 12rem;
+        width: 15rem;
+    }
+}
+
+/* ===================== MOBILES: 320px - 767px ===================== */
+@media (max-width: 767px) {
+    body{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #container-grid{
+        width: 95%;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    #social-media{
+        order: 1;
+        grid-column: 1/2;
+        grid-row: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        min-height: 12rem;
+    }
+
+    #social-media h2{
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #social-media h3{
+        font-size: 0.9rem;
+    }
+
+    #accounts-plataforms{
+        order: 2;
+        grid-column: 1/2;
+        grid-row: auto;
+        min-height: 10rem;
+    }
+
+    #accounts-plataforms figure{
+        padding-left: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    #accounts-plataforms img{
+        width: 80%;
+    }
+
+    #accounts-plataforms h2{
+        text-align: left;
+        padding-left: 0.8rem;
+        padding-right: 0.5rem;
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+    }
+
+    #posting-schedule{
+        order: 3;
+        grid-column: 1/2;
+        grid-row: auto;
+        padding-top: 1rem;
+        min-height: 16rem;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+
+    #posting-schedule h2{
+        padding-right: 1rem;
+        text-align: left;
+        line-height: 1.2rem;
+        margin-bottom: 0;
+        margin-left: -1rem;
+        max-width: 80%;
+        font-size: 1.3rem;
+    }
+
+    #posting-schedule div{
+        padding-top: 3rem;
+    }
+
+    #schedule-social-media{
+        order: 4;
+        grid-column: 1/2;
+        grid-row: auto;
+        justify-content: center;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        min-height: 20rem;
+    }
+
+    #schedule-social-media h2{
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.2rem;
+    }
+
+    #schedule-social-media img{
+        margin-left: 0;
+        height: 10rem;
+        width: 12rem;
+        margin-bottom: 1rem;
+    }
+
+    #schedule-social-media p{
+        padding-right: 0;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    #grow-followers{
+        order: 5;
+        grid-column: 1/2;
+        grid-row: auto;
+        flex-direction: column;
+        padding: 1rem;
+        min-height: 18rem;
+    }
+
+    #grow-followers h2{
+        font-size: 1.3rem;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    #grow-followers figure{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    #porcentaje{
+        order: 6;
+        grid-column: 1/2;
+        grid-row: auto;
+        min-height: 10rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    #porcentaje span{
+        font-size: 2rem;
+    }
+
+    #porcentaje p{
+        font-size: 0.9rem;
+    }
+
+    #create-post{
+        order: 7;
+        grid-column: 1/2;
+        grid-row: auto;
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        min-height: 12rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #create-post h2{
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: left;
+        max-width: 80%;
+    }
+
+    #create-post img{
+        width: 60%;
+        height: auto;
+    }
+
+    #write-content{
+        order: 8;
+        grid-column: 1/2;
+        grid-row: auto;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        min-height: 16rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #write-content h2{
+        font-size: 1.3rem;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 1rem;
+        max-width: 60%;
+    }
+
+    #write-content img{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .images{
+        width: 8rem;
+    }
+}
